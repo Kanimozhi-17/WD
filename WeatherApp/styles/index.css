@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+body{  
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.center_content{
+    padding: 3% 2% 3% 2%;
+    border-radius: 30px;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: url('../assests/background.webp');
+}
+
+.text_box_1{
+    padding: 4%;
+    width: 18vw;
+    border-radius: 30px;   
+}
+
+.text_box_1::placeholder{
+   font-size: 15px;
+}
+
+input[type="text"]{
+    padding-left:8%;
+    outline: none;
+    border: none;
+}
+
+.button_1{
+    transform: rotateY(180deg);  
+    width: auto; 
+    border-radius: 20px;
+    border: none;
+    padding: 0px 15px 5px 15px;
+    color: white;
+    background-color: blueviolet;
+}
+
+span{
+    font-size: 30px;
+}
+
+
+.answer{
+    margin: 2% 0% 2% 0%;
+    visibility: hidden;
+    padding: 3% 2% 2% 2%;
+    width: 25vw;
+    border-radius: 30px;
+    background-image: url('../assests/background.webp');
+}
+
+.invalid_box{
+    margin: 2% 0% 2% 0%;
+    padding: 2% 2% 2% 2%;
+    display: none;
+    width: 25vw;
+    border-radius: 30px;
+    background-image: url('../assests/background.webp');
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p{
+    margin: 0;
+}
+
+.city_name{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 5%;
+}
+
+.line{
+    display: block;
+    border-bottom: 1px solid rgb(179, 179, 179);
+
+}
+img{
+    text-align: left;
+    height: 20px;
+    width: 20px;  
+}
+.location{
+    padding-top: 2%;
+    
+}
+
+.location p{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    padding: 2% 2% 2% 0%;
+    
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+}
+
+.date_time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+    color: white;
+}
+
+.date_time p{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    padding: 2% 0% 2% 0%;
+}
+
+.temperature{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5% 0% 5% 0%;
+}
+
+.image_temp{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 20%;
+}
+
+.image_temp img{
+    height: 12vh;
+    width: 12vw;
+        
+}
+
+.climate{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.speed{
+    color: white;
+    font-size: 15px;
+}
