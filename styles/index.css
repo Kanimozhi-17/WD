@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+
+
+body{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.effects_rain{
+    position: absolute;
+    width: 0.18%;
+    height: 1.2%;
+    background-color: #6ab6db;
+    opacity: 0.5;
+    animation: fall 1s linear infinite;
+}
+
+
+@keyframes fall {
+    0% {
+      transform: translateY(-300px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(100vh); 
+      opacity: 0;
+    }
+  }
+  
+
+
+.center_content{
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 10rem;
+    gap: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: url('../assests/background.webp');
+}
+
+
+
+
+.text_box_1::placeholder{
+   color: black;
+   font-size: 0.7rem;
+}
+
+input[type="text"]{
+    padding: 0.1rem 0.1rem 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem; 
+    width: 7rem; 
+}
+
+.button_1{
+    transform: rotateY(180deg);  
+    color: rgb(107, 4, 204);
+    padding-right: 0.3rem;
+    font-size: 1.5rem;
+    background:none;
+    border: none;
+
+}
+
+
+    
+
+
+.answer{
+    margin: 0.5rem;
+    padding: 1rem;
+    visibility: hidden;
+    width: 10rem;
+    border-radius: 1.5rem;
+    background-image: url('../assests/background.webp');
+}
+
+.invalid_box{
+    margin: 1rem;
+    padding: 1rem;
+    display: none;
+    width: 10rem;
+    border-radius: 1.5rem;
+    background-image: url('../assests/background.webp');
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+p{
+    margin: 0;
+}
+
+.city_name{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+}
+
+.line{
+    display: block;
+    border-bottom: 0.07rem solid rgb(179, 179, 179);
+
+}
+img{
+    text-align: left;
+    height:0.5rem;
+    width: 0.7rem;  
+    padding-right: 0.2rem;
+}
+
+.location{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    
+}
+
+.location p{
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.2rem;
+}
+
+.date_time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.2rem;
+    color: white;
+}
+
+.date_time p{
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.temperature{
+    display: inline;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.image_temp{
+    margin-top: 1rem;
+}
+
+
+
+.image_temp img{
+    height: 4rem;
+    width: 5rem;
+        
+}
+.climate_des{
+    color: white;
+}
+
+
+.climate{
+    
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.speed{
+    
+    font-size: 0.6rem;
+}
+
+
+@media (min-width: 1024px) {
+    .center_content{
+        width: 25rem;
+        margin: 2rem 0rem 1.2rem 0rem;
+        padding: 1.7rem;
+        gap: 1rem;
+    }
+    input[type="text"]{
+        width: 19rem;
+        height: 2.1rem;
+        font-size: 0.8rem;
+    }
+    input::placeholder{
+        padding-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .answer{
+        width: 25rem;
+        padding: 1.5rem;
+    }
+    .invalid_box{
+        width: 25rem;
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+    .city_name{
+        font-size: 2.5rem;
+    }
+    .location p{
+        padding: 0.5rem 0rem 0.2rem 0rem;
+        font-size: 0.9rem;
+    }
+    .date_time p{
+        font-size: 0.9rem;}
+
+    .temperature{
+        padding: 1rem 3rem 1rem 1rem;
+        font-size: 2rem;
+    }
+    img{
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+    .image_temp img{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .climate{
+        font-size: 1.2rem;
+    }
+    .speed{
+        font-size: 0.9rem;
+    }
+  }
